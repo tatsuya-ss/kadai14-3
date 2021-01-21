@@ -13,9 +13,12 @@
 		75792BD225B99F3C003F05E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75792BD025B99F3C003F05E2 /* Main.storyboard */; };
 		75792BD425B99F41003F05E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75792BD325B99F41003F05E2 /* Assets.xcassets */; };
 		75792BD725B99F41003F05E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75792BD525B99F41003F05E2 /* LaunchScreen.storyboard */; };
+		E56309DDB7DAE812423DF674 /* Pods_kadai14_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3340D64C1860E490871140 /* Pods_kadai14_3.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B6F12DF9F155A033B0BDDE8 /* Pods-kadai14-3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kadai14-3.release.xcconfig"; path = "Target Support Files/Pods-kadai14-3/Pods-kadai14-3.release.xcconfig"; sourceTree = "<group>"; };
+		443FF6B6FA1C4E38638CA4EE /* Pods-kadai14-3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kadai14-3.debug.xcconfig"; path = "Target Support Files/Pods-kadai14-3/Pods-kadai14-3.debug.xcconfig"; sourceTree = "<group>"; };
 		75792BC725B99F3C003F05E2 /* kadai14-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kadai14-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75792BCA25B99F3C003F05E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75792BCC25B99F3C003F05E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		75792BD325B99F41003F05E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75792BD625B99F41003F05E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75792BD825B99F41003F05E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3340D64C1860E490871140 /* Pods_kadai14_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kadai14_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56309DDB7DAE812423DF674 /* Pods_kadai14_3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		536F00184F8D97222A1BDEBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				443FF6B6FA1C4E38638CA4EE /* Pods-kadai14-3.debug.xcconfig */,
+				3B6F12DF9F155A033B0BDDE8 /* Pods-kadai14-3.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		75792BBE25B99F3C003F05E2 = {
 			isa = PBXGroup;
 			children = (
 				75792BC925B99F3C003F05E2 /* kadai14-3 */,
 				75792BC825B99F3C003F05E2 /* Products */,
+				536F00184F8D97222A1BDEBC /* Pods */,
+				7EB45A90A7F6BF474CADF8F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = "kadai14-3";
 			sourceTree = "<group>";
 		};
+		7EB45A90A7F6BF474CADF8F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C3340D64C1860E490871140 /* Pods_kadai14_3.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75792BDB25B99F41003F05E2 /* Build configuration list for PBXNativeTarget "kadai14-3" */;
 			buildPhases = (
+				EE3252E9ADC47606F6DCB802 /* [CP] Check Pods Manifest.lock */,
 				75792BC325B99F3C003F05E2 /* Sources */,
 				75792BC425B99F3C003F05E2 /* Frameworks */,
 				75792BC525B99F3C003F05E2 /* Resources */,
+				755E5A7325B9A45B00E2AF3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		755E5A7325B9A45B00E2AF3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		EE3252E9ADC47606F6DCB802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kadai14-3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		75792BC325B99F3C003F05E2 /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		75792BDC25B99F41003F05E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 443FF6B6FA1C4E38638CA4EE /* Pods-kadai14-3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		75792BDD25B99F41003F05E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B6F12DF9F155A033B0BDDE8 /* Pods-kadai14-3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
