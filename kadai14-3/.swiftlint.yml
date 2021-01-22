@@ -1,0 +1,14 @@
+disabled_rules:
+  - force_cast
+
+line_length: 300  #初期設定の箇所で警告を出さないため。
+
+
+opt_in_rules:
+  - legacy_random
+  - private_action
+  - private_outlet
+  - unneeded_parentheses_in_closure_argument
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+

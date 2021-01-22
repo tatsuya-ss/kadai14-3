@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		755E5A7B25B9AA6400E2AF3E /* MemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E5A7A25B9AA6400E2AF3E /* MemoTableViewController.swift */; };
+		755E5A7E25B9AA8200E2AF3E /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E5A7D25B9AA8200E2AF3E /* AddViewController.swift */; };
+		755E5A8425B9AAF500E2AF3E /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E5A8225B9AAF500E2AF3E /* CheckTableViewCell.swift */; };
+		755E5A8525B9AAF500E2AF3E /* CheckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 755E5A8325B9AAF500E2AF3E /* CheckTableViewCell.xib */; };
+		755E5A8925B9B31100E2AF3E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 755E5A8825B9B31100E2AF3E /* .swiftlint.yml */; };
 		75792BCB25B99F3C003F05E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75792BCA25B99F3C003F05E2 /* AppDelegate.swift */; };
 		75792BCD25B99F3C003F05E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75792BCC25B99F3C003F05E2 /* SceneDelegate.swift */; };
 		75792BD225B99F3C003F05E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75792BD025B99F3C003F05E2 /* Main.storyboard */; };
@@ -18,6 +23,11 @@
 /* Begin PBXFileReference section */
 		3B6F12DF9F155A033B0BDDE8 /* Pods-kadai14-3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kadai14-3.release.xcconfig"; path = "Target Support Files/Pods-kadai14-3/Pods-kadai14-3.release.xcconfig"; sourceTree = "<group>"; };
 		443FF6B6FA1C4E38638CA4EE /* Pods-kadai14-3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kadai14-3.debug.xcconfig"; path = "Target Support Files/Pods-kadai14-3/Pods-kadai14-3.debug.xcconfig"; sourceTree = "<group>"; };
+		755E5A7A25B9AA6400E2AF3E /* MemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewController.swift; sourceTree = "<group>"; };
+		755E5A7D25B9AA8200E2AF3E /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		755E5A8225B9AAF500E2AF3E /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
+		755E5A8325B9AAF500E2AF3E /* CheckTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckTableViewCell.xib; sourceTree = "<group>"; };
+		755E5A8825B9B31100E2AF3E /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		75792BC725B99F3C003F05E2 /* kadai14-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kadai14-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75792BCA25B99F3C003F05E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75792BCC25B99F3C003F05E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,10 +82,15 @@
 			children = (
 				75792BCA25B99F3C003F05E2 /* AppDelegate.swift */,
 				75792BCC25B99F3C003F05E2 /* SceneDelegate.swift */,
+				755E5A7A25B9AA6400E2AF3E /* MemoTableViewController.swift */,
+				755E5A7D25B9AA8200E2AF3E /* AddViewController.swift */,
+				755E5A8225B9AAF500E2AF3E /* CheckTableViewCell.swift */,
+				755E5A8325B9AAF500E2AF3E /* CheckTableViewCell.xib */,
 				75792BD025B99F3C003F05E2 /* Main.storyboard */,
 				75792BD325B99F41003F05E2 /* Assets.xcassets */,
 				75792BD525B99F41003F05E2 /* LaunchScreen.storyboard */,
 				75792BD825B99F41003F05E2 /* Info.plist */,
+				755E5A8825B9B31100E2AF3E /* .swiftlint.yml */,
 			);
 			path = "kadai14-3";
 			sourceTree = "<group>";
@@ -147,6 +162,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				755E5A8925B9B31100E2AF3E /* .swiftlint.yml in Resources */,
+				755E5A8525B9AAF500E2AF3E /* CheckTableViewCell.xib in Resources */,
 				75792BD725B99F41003F05E2 /* LaunchScreen.storyboard in Resources */,
 				75792BD425B99F41003F05E2 /* Assets.xcassets in Resources */,
 				75792BD225B99F3C003F05E2 /* Main.storyboard in Resources */,
@@ -203,7 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				75792BCB25B99F3C003F05E2 /* AppDelegate.swift in Sources */,
+				755E5A8425B9AAF500E2AF3E /* CheckTableViewCell.swift in Sources */,
 				75792BCD25B99F3C003F05E2 /* SceneDelegate.swift in Sources */,
+				755E5A7E25B9AA8200E2AF3E /* AddViewController.swift in Sources */,
+				755E5A7B25B9AA6400E2AF3E /* MemoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

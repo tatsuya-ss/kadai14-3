@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Memo Table View Controller-->
         <scene sceneID="LJP-cV-TIH">
             <objects>
-                <tableViewController id="ka6-51-x9d" sceneMemberID="viewController">
+                <tableViewController id="ka6-51-x9d" customClass="MemoTableViewController" customModule="kadai14_3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wJQ-dw-g1W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="1191.304347826087" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="ojo-1Y-D3k">
             <objects>
-                <viewController id="2Xd-QI-tof" sceneMemberID="viewController">
+                <viewController id="2Xd-QI-tof" customClass="AddViewController" customModule="kadai14_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svL-6V-VgD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,11 +74,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YKX-SS-U1o">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xOp-uC-yhM"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="f21-gp-2Ma"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xOp-uC-yhM">
+                            <connections>
+                                <segue destination="eNz-p0-3fr" kind="unwind" unwindAction="cancelWithSegue:" id="SNS-vI-Ocg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="f21-gp-2Ma">
+                            <connections>
+                                <action selector="saveButton:" destination="2Xd-QI-tof" id="3ZS-KL-gRq"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addTextField" destination="c1f-L5-knl" id="Ohi-za-R9r"/>
+                        <segue destination="eNz-p0-3fr" kind="unwind" identifier="exit" unwindAction="exitWithSegue:" id="XYI-Fd-tsY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8L4-by-BSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="eNz-p0-3fr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2997" y="84"/>
         </scene>
