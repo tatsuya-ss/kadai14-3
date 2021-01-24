@@ -18,24 +18,26 @@ class MemoTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return fruits.count
+        fruits.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CheckTableViewCell.reuseIdentifier, for: indexPath) as? CheckTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CheckTableViewCell.reuseIdentifier, for: indexPath) as! CheckTableViewCell
 
-        cell!.configure(isChecked: indexPath.row % 2 == 1, name: fruits[indexPath.row])
-        // Configure the cell...
+        cell.configure(isChecked: indexPath.row % 2 == 1, name: fruits[indexPath.row])
 
-        return cell!
+        return cell
     }
 
     @IBAction private func cancel(segue: UIStoryboardSegue) {
     }
+
     @IBAction private func exit(segue: UIStoryboardSegue) {
-        let addVC = segue.source as? AddViewController
-        fruits.append(addVC?.memo ?? "")
+        guard let addVC = segue.source as? AddViewController else {
+            return
+        }
+
+        fruits.append(addVC.memo)
         tableView.reloadData()
     }
 }
